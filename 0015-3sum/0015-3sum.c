@@ -4,7 +4,7 @@ int compare(const void *a, const void *b){
 
 int** threeSum(int* nums, int numsSize, int* returnSize, int** returnColumnSizes){
     qsort(nums, numsSize, sizeof(int), compare);
-    int maxTriplets = (numsSize < 1000) ? numsSize * (numsSize - 1) * (numsSize - 2) / 6 : 20000;
+    int maxTriplets = (numsSize < 1000) ? numsSize * (numsSize - 1) * (numsSize - 2) / 6 : 18000;
     int **result = malloc(maxTriplets * sizeof(int*));
     *returnColumnSizes = malloc(maxTriplets * sizeof(int));
     *returnSize = 0;
