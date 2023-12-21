@@ -5,8 +5,8 @@
  */
 var map = function(arr, fn) {
     const result = [];
-    for(let i = 0; i < arr.length; i++){
-        result[i] = fn(arr[i], i);
-    }
+    arr.forEach((element ,i) => {
+        result[i] = fn(element, i) 
+    })
     return result;
 };
